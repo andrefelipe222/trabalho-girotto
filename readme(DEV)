@@ -1,0 +1,31 @@
+projeto em grupo do girotto.
+grupo:André Felipe.
+                    
+                     MENU
+--criei uma variável(ss) para começar um loop de enquanto(enquanto ss=1 o sistema de menu vai funcionar).
+--criei os textos de menu, e a variável(escolha) pra um se(determina os jogos).
+                     PERGUNTAS E RESPOSTAS
+--criei uma variável enquanto(pra determinar se o jogo rcomeça ou termina).
+--criei uma variável(resposta) para ler a resposta das perguntas.
+--e criei as variáveis(respostas) para ler as respostas dos jogos.
+--em seguida criei as perguntas e uma cadeia se(para ler as respostas e determinar se era verdade ou falso).
+-- criei uma cadeia se par determinar o final.
+                    COBRA NA CAIXA
+--criei as variáveis(cobra,botão,vazia)e(caixas),pra rodar em um sistema randômico pra escolher as posições.
+--criei as variáveis(jogador1e2) e ler qual os jogadores vocês escolhem.
+--uma variável(se) pra rodar os sistemas do jogo.
+--o jogador 1 vai escolher entre as caixas.
+--um (se)para escolher as caixais.
+--uma cadeia(se)para os valores das caixas,caso alguma caixa esteja com o botão ou a cobra, o jogotem a opção de jogar novamente ou voltar ao menu.
+--repeti os processos pro jogador2.
+                      BLOSMA WAR
+--criei as variáveis das blosmas e atribui os valores em 1.
+--criei as variáveis(jogador,comando,retorno).
+--pra uma cadeia enquento.
+--uma cadeia pra mudar o (5)para um(0) derrota.
+--logo depois as variáveis jogadores e blosmas.
+--uma cadeia se para(definir se o jogador 1 ou 2 va atuar).
+--os comandos entre atacar e dividir.
+--ataque(escolha sua blosma e a blosma que deseja atacar).
+--dividir(escolha a blosma pra dividir e somar a sua outra blosma).-mesmo sistema para o jogador 2.
+--quando um dos jogadores tiver as duas blosmas zeradas o jogo vai acabar e vai ter a opção de recomeçar ou voltar para o menu.
