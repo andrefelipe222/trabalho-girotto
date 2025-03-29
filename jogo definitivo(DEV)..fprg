@@ -1,0 +1,975 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="jogo"/>
+        <attribute name="authors" value="andre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-29 03:33:13 "/>
+        <attribute name="created" value="YW5kcmU7TEFQOzIwMjUtMDMtMDQ7IjA5OjQ5OjMxICI7MTk0MA=="/>
+        <attribute name="edited" value="YW5kcmU7TEFQOzIwMjUtMDMtMDk7IjA1OjAxOjIyICI7Mjc7MjA5Mw=="/>
+        <attribute name="edited" value="UEM7REVTS1RPUC1HRzA0NFAwOzIwMjUtMDMtMjE7IjA3OjA3OjUxICI7MTthbmRyZTtMQVA7MjAyNS0wMy0xNTsiMDU6MzY6MjAgIjtwZXJndW50YSBlIHJlc3Bvc3RhIC0gQ29waWEuZnByZzs3NDk0"/>
+        <attribute name="edited" value="UEM7REVTS1RPUC1HRzA0NFAwOzIwMjUtMDMtMjE7IjA3OjEwOjMwICI7MTthbmRyZTtMQVA7MjAyNS0wMy0wOTsiMDM6Mzc6NDAgIjtjb2JyYSBuYSBjYWl4YSAtIENvcGlhLmZwcmc7Njg4MQ=="/>
+        <attribute name="edited" value="UEM7REVTS1RPUC1HRzA0NFAwOzIwMjUtMDMtMjE7IjA3OjExOjMzICI7MTthbmRyZTtMQVA7MjAyNS0wMy0wNjsiMDQ6NTY6MjAgIjtibG91c21hIHdhcihkZWZpbml0aXZvKSAtIENvcGlhIC0gQ29waWEuZnByZzs4NDQ2"/>
+        <attribute name="edited" value="UEM7REVTS1RPUC1HRzA0NFAwOzIwMjUtMDMtMjk7IjAzOjMzOjEzICI7MTQ7MjUwMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ss" type="Integer" array="False" size=""/>
+            <assign variable="ss" expression="1"/>
+            <while expression="ss=1">
+                <output expression="&quot;                         \\\newtari///&quot;" newline="True"/>
+                <output expression="&quot;1:perguntas e respostas&quot;" newline="True"/>
+                <output expression="&quot;2:cobra na caixa&quot;" newline="True"/>
+                <output expression="&quot;3:gousmas war&quot;" newline="True"/>
+                <output expression="&quot;4:sair&quot;" newline="True"/>
+                <declare name="escolhai" type="Integer" array="False" size=""/>
+                <input variable="escolhai"/>
+                <if expression="escolhai&lt;4">
+                    <then>
+                        <declare name="acao" type="Integer" array="False" size=""/>
+                        <if expression="escolhai=1">
+                            <then>
+                                <output expression="&quot;         \\\perguntas e respostas///&quot;" newline="True"/>
+                                <output expression="&quot;perguntas e respostas &#233; um jogo simples onde voc&#234; percisa responder 5 perguntas com 4 alternativas.&quot;" newline="True"/>
+                                <output expression="&quot;jogar(1)&quot;" newline="True"/>
+                                <output expression="&quot;menu(2)&quot;" newline="True"/>
+                                <input variable="acao"/>
+                                <if expression="acao=1">
+                                    <then>
+                                        <declare name="inicio" type="Integer" array="False" size=""/>
+                                        <assign variable="inicio" expression="1"/>
+                                        <while expression="inicio=1">
+                                            <declare name="resposta" type="Integer" array="False" size=""/>
+                                            <declare name="resposta1, resposta2, resposta3, resposta4, resposta5" type="String" array="False" size=""/>
+                                            <output expression="&quot;perguntas e respostas&quot;" newline="True"/>
+                                            <output expression="&quot;&quot;" newline="True"/>
+                                            <output expression="&quot;Qual &#233; o formato correto para declarar uma vari&#225;vel inteira em C?&quot;" newline="True"/>
+                                            <output expression="&quot;1) int numero; 2) integer numero; 3) num numero; 4) var numero; 5) numero int;&quot;" newline="True"/>
+                                            <input variable="resposta"/>
+                                            <if expression="resposta=1">
+                                                <then>
+                                                    <assign variable="resposta1" expression="&quot;V&quot;"/>
+                                                </then>
+                                                <else>
+                                                    <assign variable="resposta1" expression="&quot;X&quot;"/>
+                                                </else>
+                                            </if>
+                                            <output expression="&quot;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&quot;" newline="True"/>
+                                            <output expression="&quot;respostas:&quot;&amp;resposta1" newline="True"/>
+                                            <output expression="&quot;Qual biblioteca padr&#227;o precisa ser inclu&#237;da para usar a fun&#231;&#227;o printf()?&quot;" newline="True"/>
+                                            <output expression="&quot;1) #include &lt;io.h&gt; 2) #include &lt;input.h&gt; 3) #include &lt;stdio.h&gt; 4) #include &lt;stdlib.h&gt; 5) #include &lt;string.h&gt;&quot;" newline="True"/>
+                                            <input variable="resposta"/>
+                                            <if expression="resposta=3">
+                                                <then>
+                                                    <assign variable="resposta2" expression="&quot;V&quot;"/>
+                                                </then>
+                                                <else>
+                                                    <assign variable="resposta2" expression="&quot;X&quot;"/>
+                                                </else>
+                                            </if>
+                                            <output expression="&quot;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&quot;" newline="True"/>
+                                            <output expression="&quot;respostas:&quot;&amp;resposta1&amp;resposta2" newline="True"/>
+                                            <output expression="&quot;Qual operador &#233; usado para comparar dois valores em C?&quot;" newline="True"/>
+                                            <output expression="&quot;1) = 2) == 3) != 4) &gt; 5) &lt;&quot;" newline="True"/>
+                                            <input variable="resposta"/>
+                                            <if expression="resposta=2">
+                                                <then>
+                                                    <assign variable="resposta3" expression="&quot;V&quot;"/>
+                                                </then>
+                                                <else>
+                                                    <assign variable="resposta3" expression="&quot;X&quot;"/>
+                                                </else>
+                                            </if>
+                                            <output expression="&quot;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&quot;" newline="True"/>
+                                            <output expression="&quot;respostas:&quot;&amp;resposta1&amp;resposta2&amp;resposta3" newline="True"/>
+                                            <output expression="&quot;Qual destas fun&#231;&#245;es &#233; usada para alocar mem&#243;ria dinamicamente em C?&quot;" newline="True"/>
+                                            <output expression="&quot;1) scanf() 2) malloc() 3) allocate() 4) memset() 5) new()&quot;" newline="True"/>
+                                            <input variable="resposta"/>
+                                            <if expression="resposta=2">
+                                                <then>
+                                                    <assign variable="resposta4" expression="&quot;V&quot;"/>
+                                                </then>
+                                                <else>
+                                                    <assign variable="resposta4" expression="&quot;X&quot;"/>
+                                                </else>
+                                            </if>
+                                            <output expression="&quot;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&quot;" newline="True"/>
+                                            <output expression="&quot;respostas:&quot;&amp;resposta1&amp;resposta2&amp;resposta3&amp;resposta4" newline="True"/>
+                                            <output expression="&quot;Qual &#233; o valor inicial de uma vari&#225;vel n&#227;o inicializada em C?&quot;" newline="True"/>
+                                            <output expression="&quot;1) 0 2) 1 3) -1 4) Nenhum valor definido (garbage) 5) Depende do compilador&quot;" newline="True"/>
+                                            <input variable="resposta"/>
+                                            <if expression="resposta=4">
+                                                <then>
+                                                    <assign variable="resposta5" expression="&quot;V&quot;"/>
+                                                </then>
+                                                <else>
+                                                    <assign variable="resposta5" expression="&quot;X&quot;"/>
+                                                </else>
+                                            </if>
+                                            <output expression="&quot;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&quot;" newline="True"/>
+                                            <output expression="&quot;respostas:&quot;&amp;resposta1&amp;resposta2&amp;resposta3&amp;resposta4&amp;resposta5" newline="True"/>
+                                            <declare name="final" type="Integer" array="False" size=""/>
+                                            <output expression="&quot;(1)jogar novamente\n(2)voltar ao menu&quot;" newline="True"/>
+                                            <input variable="final"/>
+                                            <if expression="final=1">
+                                                <then/>
+                                                <else>
+                                                    <assign variable="inicio" expression="2"/>
+                                                </else>
+                                            </if>
+                                        </while>
+                                    </then>
+                                    <else/>
+                                </if>
+                                <comment text="sistema pergunta e resposta"/>
+                            </then>
+                            <else>
+                                <if expression="escolhai=2">
+                                    <then>
+                                        <output expression="&quot;         \\\cobra na caixa///&quot;" newline="True"/>
+                                        <output expression="&quot;os dois jogadores devem escolher dentre as 5 caixas alternado entre os jogadores, dentro das 5 caixas tem 1 cobra(perda),1 bot&#227;o(vitoria), 3 caixas vazias.&quot;" newline="True"/>
+                                        <output expression="&quot;jogar(1)&quot;" newline="True"/>
+                                        <output expression="&quot;menu(2)&quot;" newline="True"/>
+                                        <input variable="acao"/>
+                                        <if expression="acao=1">
+                                            <then>
+                                                <declare name="jogador1, jogador2" type="String" array="False" size=""/>
+                                                <declare name="inicio" type="Integer" array="False" size=""/>
+                                                <assign variable="inicio" expression="1"/>
+                                                <output expression="&quot;(1)-Howard Carter&quot;" newline="True"/>
+                                                <output expression="&quot;(2)-Giovanni Belzoni&quot;" newline="True"/>
+                                                <output expression="&quot;(3)-Lord Carnarvon&quot;" newline="True"/>
+                                                <output expression="&quot;(4)-Arthur Evans&quot;" newline="True"/>
+                                                <output expression="&quot;digite seu explorador(1):&quot;" newline="True"/>
+                                                <input variable="jogador1"/>
+                                                <output expression="&quot;digite seu explorador(2):&quot;" newline="True"/>
+                                                <input variable="jogador2"/>
+                                                <output expression="&quot;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&quot;" newline="True"/>
+                                                <declare name="nn1" type="Integer" array="False" size=""/>
+                                                <assign variable="nn1" expression="1"/>
+                                                <while expression="inicio=1">
+                                                    <while expression="nn1=1">
+                                                        <declare name="cobra, bot&#227;o, vazia" type="String" array="False" size=""/>
+                                                        <declare name="caixa1, caixa2, caixa3, caixa4, caixa5" type="String" array="False" size=""/>
+                                                        <assign variable="cobra" expression="&quot;cobra&quot;"/>
+                                                        <assign variable="bot&#227;o" expression="&quot;bot&#227;o&quot;"/>
+                                                        <assign variable="vazia" expression="&quot;vazia&quot;"/>
+                                                        <declare name="chance" type="Integer" array="False" size=""/>
+                                                        <assign variable="chance" expression="random(6)"/>
+                                                        <if expression="chance=0">
+                                                            <then>
+                                                                <assign variable="caixa1" expression="&quot;bot&#227;o&quot;"/>
+                                                                <assign variable="caixa2" expression="&quot;cobra&quot;"/>
+                                                                <assign variable="caixa3" expression="&quot;vazia&quot;"/>
+                                                                <assign variable="caixa4" expression="&quot;vazia&quot;"/>
+                                                                <assign variable="caixa5" expression="&quot;vazia&quot;"/>
+                                                            </then>
+                                                            <else>
+                                                                <if expression="chance=1">
+                                                                    <then>
+                                                                        <assign variable="caixa1" expression="&quot;vazia&quot;"/>
+                                                                        <assign variable="caixa2" expression="&quot;bot&#227;o&quot;"/>
+                                                                        <assign variable="caixa3" expression="&quot;cobra&quot;"/>
+                                                                        <assign variable="caixa4" expression="&quot;vazia&quot;"/>
+                                                                        <assign variable="caixa5" expression="&quot;vazia&quot;"/>
+                                                                    </then>
+                                                                    <else>
+                                                                        <if expression="chance=2">
+                                                                            <then>
+                                                                                <assign variable="caixa1" expression="&quot;vazia&quot;"/>
+                                                                                <assign variable="caixa2" expression="&quot;vazia&quot;"/>
+                                                                                <assign variable="caixa3" expression="&quot;vazia&quot;"/>
+                                                                                <assign variable="caixa4" expression="&quot;bot&#227;o&quot;"/>
+                                                                                <assign variable="caixa5" expression="&quot;cobra&quot;"/>
+                                                                            </then>
+                                                                            <else>
+                                                                                <if expression="chance=3">
+                                                                                    <then>
+                                                                                        <assign variable="caixa1" expression="&quot;cobra&quot;"/>
+                                                                                        <assign variable="caixa2" expression="&quot;vazia&quot;"/>
+                                                                                        <assign variable="caixa3" expression="&quot;bot&#227;o&quot;"/>
+                                                                                        <assign variable="caixa4" expression="&quot;vazia&quot;"/>
+                                                                                        <assign variable="caixa5" expression="&quot;vazia&quot;"/>
+                                                                                    </then>
+                                                                                    <else>
+                                                                                        <if expression="chance=4">
+                                                                                            <then>
+                                                                                                <assign variable="caixa1" expression="&quot;cobra&quot;"/>
+                                                                                                <assign variable="caixa2" expression="&quot;vazia&quot;"/>
+                                                                                                <assign variable="caixa3" expression="&quot;vazia&quot;"/>
+                                                                                                <assign variable="caixa4" expression="&quot;vazia&quot;"/>
+                                                                                                <assign variable="caixa5" expression="&quot;bot&#227;o&quot;"/>
+                                                                                            </then>
+                                                                                            <else>
+                                                                                                <if expression="chance=5">
+                                                                                                    <then>
+                                                                                                        <assign variable="caixa1" expression="&quot;bot&#227;o&quot;"/>
+                                                                                                        <assign variable="caixa2" expression="&quot;vazia&quot;"/>
+                                                                                                        <assign variable="caixa3" expression="&quot;vazia&quot;"/>
+                                                                                                        <assign variable="caixa4" expression="&quot;vazia&quot;"/>
+                                                                                                        <assign variable="caixa5" expression="&quot;cobra&quot;"/>
+                                                                                                    </then>
+                                                                                                    <else/>
+                                                                                                </if>
+                                                                                            </else>
+                                                                                        </if>
+                                                                                    </else>
+                                                                                </if>
+                                                                            </else>
+                                                                        </if>
+                                                                    </else>
+                                                                </if>
+                                                            </else>
+                                                        </if>
+                                                        <assign variable="nn1" expression="2"/>
+                                                    </while>
+                                                    <output expression="&quot;explorador:&quot;&amp;jogador1" newline="True"/>
+                                                    <declare name="escolha" type="Integer" array="False" size=""/>
+                                                    <output expression="&quot;escolha entre as caixas&quot;" newline="True"/>
+                                                    <output expression="&quot;caixa(1),caixa(2),caixa(3),caixa(4),caixa(5)&quot;" newline="True"/>
+                                                    <output expression="&quot;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&quot;" newline="True"/>
+                                                    <input variable="escolha"/>
+                                                    <if expression="escolha=1">
+                                                        <then>
+                                                            <if expression="caixa1=cobra">
+                                                                <then>
+                                                                    <output expression="&quot;boom!!!!!&quot;" newline="True"/>
+                                                                    <output expression="&quot;explorador 2 ganhou&quot;" newline="True"/>
+                                                                    <output expression="&quot;(1)jogar   (2)voltar ao menu&quot;" newline="True"/>
+                                                                    <declare name="chance2" type="Integer" array="False" size=""/>
+                                                                    <input variable="chance2"/>
+                                                                    <if expression="chance2=1">
+                                                                        <then/>
+                                                                        <else>
+                                                                            <assign variable="inicio" expression="2"/>
+                                                                            <assign variable="nn1" expression="1"/>
+                                                                        </else>
+                                                                    </if>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="caixa1=bot&#227;o">
+                                                                        <then>
+                                                                            <output expression="&quot;salvo!!!&quot;" newline="True"/>
+                                                                            <output expression="&quot;voc&#234; ganhou explorador&quot;" newline="True"/>
+                                                                            <output expression="&quot;(1)jogar   (2)voltar ao menu&quot;" newline="True"/>
+                                                                            <declare name="chance2" type="Integer" array="False" size=""/>
+                                                                            <input variable="chance2"/>
+                                                                            <if expression="chance2=1">
+                                                                                <then/>
+                                                                                <else>
+                                                                                    <assign variable="inicio" expression="2"/>
+                                                                                    <assign variable="nn1" expression="1"/>
+                                                                                </else>
+                                                                            </if>
+                                                                        </then>
+                                                                        <else>
+                                                                            <if expression="caixa1=vazia">
+                                                                                <then>
+                                                                                    <output expression="&quot;opps nada&quot;" newline="True"/>
+                                                                                </then>
+                                                                                <else/>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="escolha=2">
+                                                                <then>
+                                                                    <if expression="caixa2=cobra">
+                                                                        <then>
+                                                                            <output expression="&quot;boom!!!!!&quot;" newline="True"/>
+                                                                            <output expression="&quot;explorador 2 ganhou&quot;" newline="True"/>
+                                                                            <output expression="&quot;(1)jogar   (2)voltar ao menu&quot;" newline="True"/>
+                                                                            <declare name="chance2" type="Integer" array="False" size=""/>
+                                                                            <input variable="chance2"/>
+                                                                            <if expression="chance2=1">
+                                                                                <then/>
+                                                                                <else>
+                                                                                    <assign variable="inicio" expression="2"/>
+                                                                                    <assign variable="nn1" expression="1"/>
+                                                                                </else>
+                                                                            </if>
+                                                                        </then>
+                                                                        <else>
+                                                                            <if expression="caixa2=bot&#227;o">
+                                                                                <then>
+                                                                                    <output expression="&quot;salvo!!!&quot;" newline="True"/>
+                                                                                    <output expression="&quot;voc&#234; ganhou explorador&quot;" newline="True"/>
+                                                                                    <output expression="&quot;(1)jogar   (2)voltar ao menu&quot;" newline="True"/>
+                                                                                    <declare name="chance2" type="Integer" array="False" size=""/>
+                                                                                    <input variable="chance2"/>
+                                                                                    <if expression="chance2=1">
+                                                                                        <then/>
+                                                                                        <else>
+                                                                                            <assign variable="inicio" expression="2"/>
+                                                                                            <assign variable="nn1" expression="1"/>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <if expression="caixa2=vazia">
+                                                                                        <then>
+                                                                                            <output expression="&quot;opps nada&quot;" newline="True"/>
+                                                                                        </then>
+                                                                                        <else/>
+                                                                                    </if>
+                                                                                </else>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="escolha=3">
+                                                                        <then>
+                                                                            <if expression="caixa3=cobra">
+                                                                                <then>
+                                                                                    <output expression="&quot;boom!!!!!&quot;" newline="True"/>
+                                                                                    <output expression="&quot;explorador 2 ganhou&quot;" newline="True"/>
+                                                                                    <output expression="&quot;(1)jogar   (2)voltar ao menu&quot;" newline="True"/>
+                                                                                    <declare name="chance2" type="Integer" array="False" size=""/>
+                                                                                    <input variable="chance2"/>
+                                                                                    <if expression="chance2=1">
+                                                                                        <then/>
+                                                                                        <else>
+                                                                                            <assign variable="inicio" expression="2"/>
+                                                                                            <assign variable="nn1" expression="1"/>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <if expression="caixa3=bot&#227;o">
+                                                                                        <then>
+                                                                                            <output expression="&quot;salvo!!!&quot;" newline="True"/>
+                                                                                            <output expression="&quot;voc&#234; ganhou explorador&quot;" newline="True"/>
+                                                                                            <output expression="&quot;(1)jogar   (2)voltar ao menu&quot;" newline="True"/>
+                                                                                            <declare name="chance2" type="Integer" array="False" size=""/>
+                                                                                            <input variable="chance2"/>
+                                                                                            <if expression="chance2=1">
+                                                                                                <then/>
+                                                                                                <else>
+                                                                                                    <assign variable="inicio" expression="2"/>
+                                                                                                    <assign variable="nn1" expression="1"/>
+                                                                                                </else>
+                                                                                            </if>
+                                                                                        </then>
+                                                                                        <else>
+                                                                                            <if expression="caixa3=vazia">
+                                                                                                <then>
+                                                                                                    <output expression="&quot;opps nada&quot;" newline="True"/>
+                                                                                                </then>
+                                                                                                <else/>
+                                                                                            </if>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </else>
+                                                                            </if>
+                                                                        </then>
+                                                                        <else>
+                                                                            <if expression="escolha=4">
+                                                                                <then>
+                                                                                    <if expression="caixa4=cobra">
+                                                                                        <then>
+                                                                                            <output expression="&quot;boom!!!!!&quot;" newline="True"/>
+                                                                                            <output expression="&quot;explorador 2 ganhou&quot;" newline="True"/>
+                                                                                            <output expression="&quot;(1)jogar   (2)voltar ao menu&quot;" newline="True"/>
+                                                                                            <declare name="chance2" type="Integer" array="False" size=""/>
+                                                                                            <input variable="chance2"/>
+                                                                                            <if expression="chance2=1">
+                                                                                                <then/>
+                                                                                                <else>
+                                                                                                    <assign variable="inicio" expression="2"/>
+                                                                                                    <assign variable="nn1" expression="1"/>
+                                                                                                </else>
+                                                                                            </if>
+                                                                                        </then>
+                                                                                        <else>
+                                                                                            <if expression="caixa4=bot&#227;o">
+                                                                                                <then>
+                                                                                                    <output expression="&quot;salvo!!!&quot;" newline="True"/>
+                                                                                                    <output expression="&quot;voc&#234; ganhou explorador&quot;" newline="True"/>
+                                                                                                    <output expression="&quot;(1)jogar   (2)voltar ao menu&quot;" newline="True"/>
+                                                                                                    <declare name="chance2" type="Integer" array="False" size=""/>
+                                                                                                    <input variable="chance2"/>
+                                                                                                    <if expression="chance2=1">
+                                                                                                        <then/>
+                                                                                                        <else>
+                                                                                                            <assign variable="inicio" expression="2"/>
+                                                                                                        </else>
+                                                                                                    </if>
+                                                                                                </then>
+                                                                                                <else>
+                                                                                                    <if expression="caixa4=vazia">
+                                                                                                        <then>
+                                                                                                            <output expression="&quot;opps nada&quot;" newline="True"/>
+                                                                                                        </then>
+                                                                                                        <else/>
+                                                                                                    </if>
+                                                                                                </else>
+                                                                                            </if>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <if expression="escolha=5">
+                                                                                        <then>
+                                                                                            <if expression="caixa5=cobra">
+                                                                                                <then>
+                                                                                                    <output expression="&quot;boom!!!!!&quot;" newline="True"/>
+                                                                                                    <output expression="&quot;explorador 2 ganhou&quot;" newline="True"/>
+                                                                                                    <output expression="&quot;(1)jogar   (2)voltar ao menu&quot;" newline="True"/>
+                                                                                                    <declare name="chance2" type="Integer" array="False" size=""/>
+                                                                                                    <input variable="chance2"/>
+                                                                                                    <if expression="chance2=1">
+                                                                                                        <then/>
+                                                                                                        <else>
+                                                                                                            <assign variable="inicio" expression="2"/>
+                                                                                                            <assign variable="nn1" expression="1"/>
+                                                                                                        </else>
+                                                                                                    </if>
+                                                                                                </then>
+                                                                                                <else>
+                                                                                                    <if expression="caixa5=bot&#227;o">
+                                                                                                        <then>
+                                                                                                            <output expression="&quot;salvo!!!&quot;" newline="True"/>
+                                                                                                            <output expression="&quot;voc&#234; ganhou explorador&quot;" newline="True"/>
+                                                                                                            <output expression="&quot;(1)jogar   (2)voltar ao menu&quot;" newline="True"/>
+                                                                                                            <declare name="chance2" type="Integer" array="False" size=""/>
+                                                                                                            <input variable="chance2"/>
+                                                                                                            <if expression="chance2=1">
+                                                                                                                <then/>
+                                                                                                                <else>
+                                                                                                                    <assign variable="inicio" expression="2"/>
+                                                                                                                    <assign variable="nn1" expression="1"/>
+                                                                                                                </else>
+                                                                                                            </if>
+                                                                                                        </then>
+                                                                                                        <else>
+                                                                                                            <if expression="caixa5=vazia">
+                                                                                                                <then>
+                                                                                                                    <output expression="&quot;opps nada&quot;" newline="True"/>
+                                                                                                                </then>
+                                                                                                                <else/>
+                                                                                                            </if>
+                                                                                                        </else>
+                                                                                                    </if>
+                                                                                                </else>
+                                                                                            </if>
+                                                                                        </then>
+                                                                                        <else/>
+                                                                                    </if>
+                                                                                </else>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                    <if expression="inicio=1">
+                                                        <then>
+                                                            <output expression="&quot;explorador:&quot;&amp;jogador2" newline="True"/>
+                                                            <output expression="&quot;escolha entre as caixas&quot;" newline="True"/>
+                                                            <output expression="&quot;caixa(1),caixa(2),caixa(3),caixa(4),caixa(5)&quot;" newline="True"/>
+                                                            <output expression="&quot;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&quot;" newline="True"/>
+                                                            <input variable="escolha"/>
+                                                            <if expression="escolha=1">
+                                                                <then>
+                                                                    <if expression="caixa1=cobra">
+                                                                        <then>
+                                                                            <output expression="&quot;boom!!!!!&quot;" newline="True"/>
+                                                                            <output expression="&quot;explorador 2 ganhou&quot;" newline="True"/>
+                                                                            <output expression="&quot;(1)jogar   (2)voltar ao menu&quot;" newline="True"/>
+                                                                            <declare name="chance3" type="Integer" array="False" size=""/>
+                                                                            <input variable="chance3"/>
+                                                                            <if expression="chance3=1">
+                                                                                <then/>
+                                                                                <else>
+                                                                                    <assign variable="inicio" expression="2"/>
+                                                                                    <assign variable="nn1" expression="1"/>
+                                                                                </else>
+                                                                            </if>
+                                                                        </then>
+                                                                        <else>
+                                                                            <if expression="caixa1=bot&#227;o">
+                                                                                <then>
+                                                                                    <output expression="&quot;salvo!!!&quot;" newline="True"/>
+                                                                                    <output expression="&quot;voc&#234; ganhou explorador&quot;" newline="True"/>
+                                                                                    <output expression="&quot;(1)jogar   (2)voltar ao menu&quot;" newline="True"/>
+                                                                                    <declare name="chance3" type="Integer" array="False" size=""/>
+                                                                                    <input variable="chance3"/>
+                                                                                    <if expression="chance3=1">
+                                                                                        <then/>
+                                                                                        <else>
+                                                                                            <assign variable="inicio" expression="2"/>
+                                                                                            <assign variable="nn1" expression="1"/>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <if expression="caixa1=vazia">
+                                                                                        <then>
+                                                                                            <output expression="&quot;opps nada&quot;" newline="True"/>
+                                                                                        </then>
+                                                                                        <else/>
+                                                                                    </if>
+                                                                                </else>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="escolha=2">
+                                                                        <then>
+                                                                            <if expression="caixa2=cobra">
+                                                                                <then>
+                                                                                    <output expression="&quot;boom!!!!!&quot;" newline="True"/>
+                                                                                    <output expression="&quot;explorador 2 ganhou&quot;" newline="True"/>
+                                                                                    <output expression="&quot;(1)jogar   (2)voltar ao menu&quot;" newline="True"/>
+                                                                                    <declare name="chance3" type="Integer" array="False" size=""/>
+                                                                                    <input variable="chance3"/>
+                                                                                    <if expression="chance3=1">
+                                                                                        <then/>
+                                                                                        <else>
+                                                                                            <assign variable="inicio" expression="2"/>
+                                                                                            <assign variable="nn1" expression="1"/>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <if expression="caixa2=bot&#227;o">
+                                                                                        <then>
+                                                                                            <output expression="&quot;salvo!!!&quot;" newline="True"/>
+                                                                                            <output expression="&quot;voc&#234; ganhou explorador&quot;" newline="True"/>
+                                                                                            <output expression="&quot;(1)jogar   (2)voltar ao menu&quot;" newline="True"/>
+                                                                                            <declare name="chance3" type="Integer" array="False" size=""/>
+                                                                                            <input variable="chance3"/>
+                                                                                            <if expression="chance3=1">
+                                                                                                <then/>
+                                                                                                <else>
+                                                                                                    <assign variable="inicio" expression="2"/>
+                                                                                                    <assign variable="nn1" expression="1"/>
+                                                                                                </else>
+                                                                                            </if>
+                                                                                        </then>
+                                                                                        <else>
+                                                                                            <if expression="caixa2=vazia">
+                                                                                                <then>
+                                                                                                    <output expression="&quot;opps nada&quot;" newline="True"/>
+                                                                                                </then>
+                                                                                                <else/>
+                                                                                            </if>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </else>
+                                                                            </if>
+                                                                        </then>
+                                                                        <else>
+                                                                            <if expression="escolha=3">
+                                                                                <then>
+                                                                                    <if expression="caixa3=cobra">
+                                                                                        <then>
+                                                                                            <output expression="&quot;boom!!!!!&quot;" newline="True"/>
+                                                                                            <output expression="&quot;explorador 2 ganhou&quot;" newline="True"/>
+                                                                                            <output expression="&quot;(1)jogar   (2)voltar ao menu&quot;" newline="True"/>
+                                                                                            <declare name="chance3" type="Integer" array="False" size=""/>
+                                                                                            <input variable="chance3"/>
+                                                                                            <if expression="chance3=1">
+                                                                                                <then/>
+                                                                                                <else>
+                                                                                                    <assign variable="inicio" expression="2"/>
+                                                                                                    <assign variable="nn1" expression="1"/>
+                                                                                                </else>
+                                                                                            </if>
+                                                                                        </then>
+                                                                                        <else>
+                                                                                            <if expression="caixa3=bot&#227;o">
+                                                                                                <then>
+                                                                                                    <output expression="&quot;salvo!!!&quot;" newline="True"/>
+                                                                                                    <output expression="&quot;voc&#234; ganhou explorador&quot;" newline="True"/>
+                                                                                                    <output expression="&quot;(1)jogar   (2)voltar ao menu&quot;" newline="True"/>
+                                                                                                    <declare name="chance3" type="Integer" array="False" size=""/>
+                                                                                                    <input variable="chance3"/>
+                                                                                                    <if expression="chance3=1">
+                                                                                                        <then/>
+                                                                                                        <else>
+                                                                                                            <assign variable="inicio" expression="2"/>
+                                                                                                            <assign variable="nn1" expression="1"/>
+                                                                                                        </else>
+                                                                                                    </if>
+                                                                                                </then>
+                                                                                                <else>
+                                                                                                    <if expression="caixa3=vazia">
+                                                                                                        <then>
+                                                                                                            <output expression="&quot;opps nada&quot;" newline="True"/>
+                                                                                                        </then>
+                                                                                                        <else/>
+                                                                                                    </if>
+                                                                                                </else>
+                                                                                            </if>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <if expression="escolha=4">
+                                                                                        <then>
+                                                                                            <if expression="caixa4=cobra">
+                                                                                                <then>
+                                                                                                    <output expression="&quot;boom!!!!!&quot;" newline="True"/>
+                                                                                                    <output expression="&quot;explorador 2 ganhou&quot;" newline="True"/>
+                                                                                                    <output expression="&quot;(1)jogar   (2)voltar ao menu&quot;" newline="True"/>
+                                                                                                    <declare name="chance3" type="Integer" array="False" size=""/>
+                                                                                                    <input variable="chance3"/>
+                                                                                                    <if expression="chance3=1">
+                                                                                                        <then/>
+                                                                                                        <else>
+                                                                                                            <assign variable="inicio" expression="2"/>
+                                                                                                            <assign variable="nn1" expression="1"/>
+                                                                                                        </else>
+                                                                                                    </if>
+                                                                                                </then>
+                                                                                                <else>
+                                                                                                    <if expression="caixa4=bot&#227;o">
+                                                                                                        <then>
+                                                                                                            <output expression="&quot;salvo!!!&quot;" newline="True"/>
+                                                                                                            <output expression="&quot;voc&#234; ganhou explorador&quot;" newline="True"/>
+                                                                                                            <output expression="&quot;(1)jogar   (2)voltar ao menu&quot;" newline="True"/>
+                                                                                                            <declare name="chance3" type="Integer" array="False" size=""/>
+                                                                                                            <input variable="chance3"/>
+                                                                                                            <if expression="chance3=1">
+                                                                                                                <then/>
+                                                                                                                <else>
+                                                                                                                    <assign variable="inicio" expression="2"/>
+                                                                                                                    <assign variable="nn1" expression="1"/>
+                                                                                                                </else>
+                                                                                                            </if>
+                                                                                                        </then>
+                                                                                                        <else>
+                                                                                                            <if expression="caixa4=vazia">
+                                                                                                                <then>
+                                                                                                                    <output expression="&quot;opps nada&quot;" newline="True"/>
+                                                                                                                </then>
+                                                                                                                <else/>
+                                                                                                            </if>
+                                                                                                        </else>
+                                                                                                    </if>
+                                                                                                </else>
+                                                                                            </if>
+                                                                                        </then>
+                                                                                        <else>
+                                                                                            <if expression="escolha=5">
+                                                                                                <then>
+                                                                                                    <if expression="caixa5=cobra">
+                                                                                                        <then>
+                                                                                                            <output expression="&quot;boom!!!!!&quot;" newline="True"/>
+                                                                                                            <output expression="&quot;explorador 2 ganhou&quot;" newline="True"/>
+                                                                                                            <output expression="&quot;(1)jogar   (2)voltar ao menu&quot;" newline="True"/>
+                                                                                                            <declare name="chance3" type="Integer" array="False" size=""/>
+                                                                                                            <input variable="chance3"/>
+                                                                                                            <if expression="chance3=1">
+                                                                                                                <then/>
+                                                                                                                <else>
+                                                                                                                    <assign variable="inicio" expression="2"/>
+                                                                                                                    <assign variable="nn1" expression="1"/>
+                                                                                                                </else>
+                                                                                                            </if>
+                                                                                                        </then>
+                                                                                                        <else>
+                                                                                                            <if expression="caixa5=bot&#227;o">
+                                                                                                                <then>
+                                                                                                                    <output expression="&quot;salvo!!!&quot;" newline="True"/>
+                                                                                                                    <output expression="&quot;voc&#234; ganhou explorador&quot;" newline="True"/>
+                                                                                                                    <output expression="&quot;(1)jogar   (2)voltar ao menu&quot;" newline="True"/>
+                                                                                                                    <declare name="chance3" type="Integer" array="False" size=""/>
+                                                                                                                    <input variable="chance3"/>
+                                                                                                                    <if expression="chance3=1">
+                                                                                                                        <then/>
+                                                                                                                        <else>
+                                                                                                                            <assign variable="inicio" expression="2"/>
+                                                                                                                            <assign variable="nn1" expression="1"/>
+                                                                                                                        </else>
+                                                                                                                    </if>
+                                                                                                                </then>
+                                                                                                                <else>
+                                                                                                                    <if expression="caixa5=vazia">
+                                                                                                                        <then>
+                                                                                                                            <output expression="&quot;opps nada&quot;" newline="True"/>
+                                                                                                                        </then>
+                                                                                                                        <else/>
+                                                                                                                    </if>
+                                                                                                                </else>
+                                                                                                            </if>
+                                                                                                        </else>
+                                                                                                    </if>
+                                                                                                </then>
+                                                                                                <else/>
+                                                                                            </if>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </else>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </then>
+                                                        <else/>
+                                                    </if>
+                                                </while>
+                                            </then>
+                                            <else/>
+                                        </if>
+                                        <comment text="sistema cobra da caixa"/>
+                                    </then>
+                                    <else>
+                                        <if expression="escolhai=3">
+                                            <then>
+                                                <output expression="&quot;         \\\gousmas war///&quot;" newline="True"/>
+                                                <comment text="n&#227;o consegui diminuir os bal&#245;es"/>
+                                                <output expression="&quot;neste jogo cada jogador come&#231;a com duas gousmas de nivel 1&quot;" newline="True"/>
+                                                <output expression="&quot;o jogador pode escolher entre atacar e dividir&quot;" newline="True"/>
+                                                <output expression="&quot;atacar:a gousma atacada tem os seus niveis somados com as gousmas atacantes&quot;" newline="True"/>
+                                                <output expression="&quot;dividir:a gousma pode dividir seus niveis em um uma nova gousma&quot;" newline="True"/>
+                                                <output expression="&quot; a gousma que chegar no nivel 5 perde&quot;" newline="True"/>
+                                                <output expression="&quot;jogar(1)&quot;" newline="True"/>
+                                                <output expression="&quot;menu(2)&quot;" newline="True"/>
+                                                <input variable="acao"/>
+                                                <if expression="acao=1">
+                                                    <then>
+                                                        <declare name="blosma1j1, blosma2j1, blosma1j2, blosma2j2" type="Integer" array="False" size=""/>
+                                                        <assign variable="blosma1j1" expression="1"/>
+                                                        <assign variable="blosma2j1" expression="1"/>
+                                                        <assign variable="blosma1j2" expression="1"/>
+                                                        <assign variable="blosma2j2" expression="1"/>
+                                                        <declare name="jogador, comando, retorno" type="Integer" array="False" size=""/>
+                                                        <output expression="&quot;iniciar(1):&quot;" newline="True"/>
+                                                        <output expression="&quot;retornar(2):&quot;" newline="True"/>
+                                                        <input variable="retorno"/>
+                                                        <while expression="retorno=1">
+                                                            <if expression="blosma1j1&gt;=5">
+                                                                <then>
+                                                                    <assign variable="blosma1j1" expression="0"/>
+                                                                </then>
+                                                                <else/>
+                                                            </if>
+                                                            <if expression="blosma2j1&gt;=5">
+                                                                <then>
+                                                                    <assign variable="blosma2j1" expression="0"/>
+                                                                </then>
+                                                                <else/>
+                                                            </if>
+                                                            <if expression="blosma1j2&gt;=5">
+                                                                <then>
+                                                                    <assign variable="blosma1j2" expression="0"/>
+                                                                </then>
+                                                                <else/>
+                                                            </if>
+                                                            <if expression="blosma2j2&gt;=5">
+                                                                <then>
+                                                                    <assign variable="blosma2j2" expression="0"/>
+                                                                </then>
+                                                                <else/>
+                                                            </if>
+                                                            <output expression="&quot;            gousmas&quot;" newline="True"/>
+                                                            <output expression="&quot;            (1)(2)&quot;" newline="True"/>
+                                                            <output expression="&quot;jogador(1):   &quot;  &amp;blosma1j1   &amp;blosma2j1" newline="True"/>
+                                                            <output expression="&quot;jogador(2):   &quot;&amp;blosma1j2 &amp;blosma2j2" newline="True"/>
+                                                            <output expression="&quot;jogador:&quot;" newline="False"/>
+                                                            <input variable="jogador"/>
+                                                            <if expression="jogador=1">
+                                                                <then>
+                                                                    <output expression="&quot;atacar-1-&quot;" newline="True"/>
+                                                                    <output expression="&quot;dividir-2-&quot;" newline="True"/>
+                                                                    <output expression="&quot;comando:&quot;" newline="True"/>
+                                                                    <input variable="comando"/>
+                                                                    <if expression="comando=1">
+                                                                        <then>
+                                                                            <declare name="atacantej1" type="Integer" array="False" size=""/>
+                                                                            <output expression="&quot;gousmas(atacante): (1)  (2)&quot;" newline="True"/>
+                                                                            <input variable="atacantej1"/>
+                                                                            <declare name="atacadoj2" type="Integer" array="False" size=""/>
+                                                                            <if expression="atacantej1=1">
+                                                                                <then>
+                                                                                    <output expression="&quot;gousmas(atacadas): (1)  (2)&quot;" newline="True"/>
+                                                                                    <input variable="atacadoj2"/>
+                                                                                    <if expression="atacadoj2=1">
+                                                                                        <then>
+                                                                                            <assign variable="blosma1j2" expression="blosma1j1+blosma1j2"/>
+                                                                                        </then>
+                                                                                        <else>
+                                                                                            <assign variable="blosma2j2" expression="blosma1j1+blosma2j2"/>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <output expression="&quot;gousmas(atacadas): (1)  (2)&quot;" newline="True"/>
+                                                                                    <input variable="atacadoj2"/>
+                                                                                    <if expression="atacadoj2=1">
+                                                                                        <then>
+                                                                                            <assign variable="blosma1j2" expression="blosma2j1+blosma1j2"/>
+                                                                                        </then>
+                                                                                        <else>
+                                                                                            <assign variable="blosma2j2" expression="blosma2j1+blosma2j2"/>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </else>
+                                                                            </if>
+                                                                        </then>
+                                                                        <else>
+                                                                            <declare name="dividir" type="Integer" array="False" size=""/>
+                                                                            <output expression="&quot;dividir:(1) (2)&quot;" newline="True"/>
+                                                                            <input variable="dividir"/>
+                                                                            <declare name="divisao, resul" type="Integer" array="False" size=""/>
+                                                                            <if expression="dividir=1">
+                                                                                <then>
+                                                                                    <declare name="divisao" type="Integer" array="False" size=""/>
+                                                                                    <assign variable="divisao" expression="blosma1j1/2"/>
+                                                                                    <assign variable="resul" expression="divisao+blosma2j1"/>
+                                                                                    <assign variable="blosma2j1" expression="resul"/>
+                                                                                    <assign variable="blosma1j1" expression="divisao"/>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <declare name="divisao" type="Integer" array="False" size=""/>
+                                                                                    <assign variable="divisao" expression="blosma2j1/2"/>
+                                                                                    <assign variable="resul" expression="divisao+blosma1j1"/>
+                                                                                    <assign variable="blosma1j1" expression="resul"/>
+                                                                                    <assign variable="blosma2j1" expression="divisao"/>
+                                                                                </else>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </then>
+                                                                <else>
+                                                                    <output expression="&quot;atacar-1-&quot;" newline="True"/>
+                                                                    <output expression="&quot;dividir-2-&quot;" newline="True"/>
+                                                                    <output expression="&quot;comando:&quot;" newline="True"/>
+                                                                    <input variable="comando"/>
+                                                                    <if expression="comando=1">
+                                                                        <then>
+                                                                            <declare name="atacantej2" type="Integer" array="False" size=""/>
+                                                                            <output expression="&quot;gousmas(atacante): (1)  (2)&quot;" newline="True"/>
+                                                                            <input variable="atacantej2"/>
+                                                                            <declare name="atacadoj1" type="Integer" array="False" size=""/>
+                                                                            <if expression="atacantej2=1">
+                                                                                <then>
+                                                                                    <output expression="&quot;gousmas(atacadas) (1)  (2)&quot;" newline="True"/>
+                                                                                    <input variable="atacadoj1"/>
+                                                                                    <if expression="atacadoj1=1">
+                                                                                        <then>
+                                                                                            <assign variable="blosma1j1" expression="blosma1j2+blosma1j1"/>
+                                                                                        </then>
+                                                                                        <else>
+                                                                                            <assign variable="blosma2j1" expression="blosma2j1+blosma1j2"/>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <output expression="&quot;gousmas(atacadas) (1)  (2)&quot;" newline="True"/>
+                                                                                    <input variable="atacadoj1"/>
+                                                                                    <if expression="atacadoj1=1">
+                                                                                        <then>
+                                                                                            <assign variable="blosma1j1" expression="blosma2j2+blosma1j1"/>
+                                                                                        </then>
+                                                                                        <else>
+                                                                                            <assign variable="blosma2j1" expression="blosma2j1+blosma2j2"/>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </else>
+                                                                            </if>
+                                                                        </then>
+                                                                        <else>
+                                                                            <declare name="dividir" type="Integer" array="False" size=""/>
+                                                                            <output expression="&quot;dividir (1) (2)&quot;" newline="True"/>
+                                                                            <input variable="dividir"/>
+                                                                            <declare name="divisao, resul" type="Integer" array="False" size=""/>
+                                                                            <if expression="dividir=1">
+                                                                                <then>
+                                                                                    <assign variable="divisao" expression="blosma1j2/2"/>
+                                                                                    <assign variable="resul" expression="divisao+blosma2j2"/>
+                                                                                    <assign variable="blosma2j2" expression="resul"/>
+                                                                                    <assign variable="blosma1j2" expression="divisao"/>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <assign variable="divisao" expression="blosma2j2/2"/>
+                                                                                    <assign variable="resul" expression="divisao+blosma1j2"/>
+                                                                                    <assign variable="blosma1j2" expression="resul"/>
+                                                                                    <assign variable="blosma2j2" expression="divisao"/>
+                                                                                </else>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                            <if expression="blosma1j1&gt;=5">
+                                                                <then>
+                                                                    <assign variable="blosma1j1" expression="0"/>
+                                                                </then>
+                                                                <else/>
+                                                            </if>
+                                                            <if expression="blosma2j1&gt;=5">
+                                                                <then>
+                                                                    <assign variable="blosma2j1" expression="0"/>
+                                                                </then>
+                                                                <else/>
+                                                            </if>
+                                                            <if expression="blosma1j2&gt;=5">
+                                                                <then>
+                                                                    <assign variable="blosma1j2" expression="0"/>
+                                                                </then>
+                                                                <else/>
+                                                            </if>
+                                                            <if expression="blosma2j2&gt;=5">
+                                                                <then>
+                                                                    <assign variable="blosma2j2" expression="0"/>
+                                                                </then>
+                                                                <else/>
+                                                            </if>
+                                                            <if expression="blosma1j1=0 and blosma2j1=0">
+                                                                <then>
+                                                                    <output expression="&quot;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&quot;" newline="True"/>
+                                                                    <output expression="&quot;jogador(2)-venceu!!!&quot;" newline="True"/>
+                                                                    <output expression="&quot;game over&quot;" newline="True"/>
+                                                                    <output expression="&quot;jogar novamente?(1)&quot;" newline="True"/>
+                                                                    <output expression="&quot;retorna ao menu(2)&quot;" newline="True"/>
+                                                                    <input variable="retorno"/>
+                                                                    <output expression="&quot;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="blosma1j2=0 and blosma2j2=0">
+                                                                        <then>
+                                                                            <output expression="&quot;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&quot;" newline="True"/>
+                                                                            <output expression="&quot;jogador(1)-venceu!!!&quot;" newline="True"/>
+                                                                            <output expression="&quot;game over&quot;" newline="True"/>
+                                                                            <output expression="&quot;jogar novamente?(1)&quot;" newline="True"/>
+                                                                            <output expression="&quot;retorna ao menu(2)&quot;" newline="True"/>
+                                                                            <input variable="retorno"/>
+                                                                            <output expression="&quot;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&quot;" newline="True"/>
+                                                                        </then>
+                                                                        <else/>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                            <output expression="&quot;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&quot;" newline="True"/>
+                                                        </while>
+                                                    </then>
+                                                    <else/>
+                                                </if>
+                                                <comment text="codigo gousma war"/>
+                                            </then>
+                                            <else/>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <assign variable="ss" expression="2"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
